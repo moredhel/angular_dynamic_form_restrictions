@@ -6,18 +6,20 @@
         <script src="js/controllers.js"></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
-        <h2>A B C</h2>
-        <div id="app-container" ng-controller="TodoCtrl">
-            <span>valid: {{ valid_input(check()) }}</span>
-            <div class="input-group">
-                <form ng-submit="calculate()">
-                    <input class="form-control" type="text" ng-model="a" size="3" placeholder="0">
-                    <input class="form-control" type="text" ng-model="b" size="3" placeholder="0">
-                    <input class="form-control" type="text" ng-model="c" size="3" placeholder="0">
-                    <input id="btn-submit" class="btn btn-primary" type="submit" value="add">
-                    <span id="return"></span>
-                </form>
+    <body class="container">
+        <div class="">
+            <h2>A B C</h2>
+            <div id="app-container" ng-controller="TodoCtrl">
+                <span>valid: {{ valid_input(check()) }}</span>
+                <div class="input-group">
+                    <form ng-submit="calculate()">
+                        <input class="form-control" type="text" ng-model="a" size="3" placeholder="0">
+                        <input class="form-control" type="text" ng-model="b" size="3" placeholder="0">
+                        <input class="form-control" type="text" ng-model="c" size="3" placeholder="0">
+                        <input id="btn-submit" class="btn btn-primary" type="submit" value="add">
+                        <span id="return"></span>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
