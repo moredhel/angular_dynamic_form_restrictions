@@ -4,6 +4,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/controllers.js"></script>
+        <script src="js/underscore.js"></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="container">
@@ -13,9 +14,18 @@
                 <span>valid: {{ valid_input(check()) }}</span>
                 <div class="input-group">
                     <form ng-submit="calculate()">
-                        <input class="form-control" type="text" ng-model="a" size="3" placeholder="0">
-                        <input class="form-control" type="text" ng-model="b" size="3" placeholder="0">
-                        <input class="form-control" type="text" ng-model="c" size="3" placeholder="0">
+                        <div class="input-group">
+                            <span class="input-group-addon">a</span>
+                            <input class="form-control" type="text" ng-model="a" size="3" placeholder="0">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">b</span>
+                            <input class="form-control" type="text" ng-model="b" size="3" placeholder="0">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon">c</span>
+                            <input class="form-control" type="text" ng-model="c" size="3" placeholder="0">
+                        </div>
                         <input id="btn-submit" class="btn btn-primary" type="submit" value="add">
                         <span id="return"></span>
                     </form>
